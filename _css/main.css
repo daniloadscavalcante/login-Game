@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;500;700&family=Roboto:wght@300;400;700;900&family=Ubuntu:wght@300;400;700&display=swap');
+:root{
+    --primary-color:#150424;    
+    --second-color: #fff;
+    --third-color: #adff2f;
+    --fourth-color: #1eff00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{    
+    /*background-image: url(../bg2.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+html,body{    
+    color: var(--second-color);
+    font-family: 'Mochiy Pop One', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    font-size: 14px;      
+}
+.bg_video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(../bg2.jpg) no-repeat;
+	background-size: cover; 
+}
+.card{
+    width: 95vw;
+    max-width: 380px;
+    background-color: rgba(0, 0, 0, .6); 
+    padding: 10px; 
+    box-shadow: 0 0 9px var(--fourth-color);  
+    border-radius: 6px 45px;
+}
+.card h3{
+    text-align: center;
+    font-size: 2em;
+    margin: 15px auto;
+}
+
+.card__info{
+    margin-top: 50px;   
+}
+.card__label--size{
+    font-size: 16px;
+}
+.card__label{
+    display: block;    
+}
+.card__input{
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    margin-top: 5px;    
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--third-color);  
+    color:var(--second-color);  
+    outline: none;
+}
+#labelSenha{
+    padding-top: 20px;
+}
+.Card__esqueceSenha{
+    text-align: right;
+    display: block;
+}
+.Card__esqueceSenha a{
+    color: var(--third-color);
+}
+.Card__esqueceSenha a:hover{
+   text-decoration: none;
+}
+.card__erro::after{
+    content:'*';
+    color: red;    
+    margin: auto;      
+}
+.card__btn{
+    display: block;
+    width: 150px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border:none;
+    margin: auto;
+    margin-top: 25px;
+    transition: all .3s linear;
+    font-family: 'Mochiy Pop One', sans-serif;
+    text-shadow: 0 0 1px var(--fourth-color);
+    cursor: pointer;
+}
+.card__btn:hover{
+    background-color: #1eff00;    
+    transition: all .3s linear;
+    text-shadow: 0 0 13px var(--second-color);
+}
+.card__cadastro span{
+    display: block;
+    text-align: center;    
+}
+.card__Link-cadastra{    
+    text-align: center;
+    margin-top: 20px;    
+}
+.card__Link-cadastra a{    
+    text-decoration: none;
+    color: var(--third-color);
+}
+.card__Link-cadastra a:hover{    
+    text-decoration: underline;
+}
+.card__or{
+    margin: 10px 0;
+}
+.card__social{
+    text-align: center;
+    padding: 20px;
+}
+.fab{
+    font-size: 2.5em;
+    margin: 0 10px;
+    cursor: pointer;
+}
+

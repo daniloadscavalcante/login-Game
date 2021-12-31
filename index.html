@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="_css/main.css">
+    <title>Login - Cadastro</title>
+</head>
+<body>
+    
+    <video class="bg_video"  loop autoplay muted>
+        <source src="./video.mp4" type="video/mp4">
+    </video>
+
+    <section class="card">
+        <h3>Login</h3>
+
+            <div class="card__info">
+                <label for="cxUser" class="card__label card__label--size"id="labelName" >user or email:</label>
+                <input type="text" class="card__input" id="cxUser" placeholder="digite seu nome ou email...">
+
+                <label for="cxPass" class="card__label card__label--size" id="labelSenha">Senha:</label>
+                <input type="password" class=" card__input" id="cxPass" placeholder="digite sua senha...">
+                <span class="Card__esqueceSenha"><a href="#">esqueci minha senha</a></span>
+                <button type="submit" class="card__btn" id="btnEntrar">Entrar</button>
+            </div>
+
+        <div class="card__cadastro">
+            <span class="card__Link-cadastra"><a href="#">Cadastre-se</a></span>
+            <span class="card__or">or</span>
+            <span class="card__p">Faça login com </span>                        
+        </div>
+
+        <div class="card__social">
+            <i class="fab fa-facebook "></i>
+            <i class="fab fa-google"></i>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./_js/validaiton.js"></script>
+    <script src="https://kit.fontawesome.com/3f3417947e.js" crossorigin="anonymous"></script> 
+</body>
+</html>
